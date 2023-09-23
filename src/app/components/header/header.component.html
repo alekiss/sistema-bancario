@@ -1,0 +1,26 @@
+<div>
+    <mat-toolbar color="primary">
+      <mat-toolbar-row class="toolbar">
+        <button
+          mat-icon-button
+          class="example-icon"
+          aria-label="Example icon-button with menu icon"
+          (click)="drawer.toggle()"
+        >
+        <mat-icon>menu</mat-icon>
+      </button>
+        <a routerLink="/">Banco União</a>
+        <span></span>
+      </mat-toolbar-row>
+    </mat-toolbar>
+</div>
+  
+<mat-drawer #drawer mode="side">
+  <div class="sidenav">
+    <a routerLink="/cliente/lista">Lista de Clientes</a>
+    <a routerLink="/cliente/novo">Cadastrar Novo Cliente</a>
+    <a routerLink="/conta/lista">Lista de Contas</a>
+    <a routerLink="/conta/novo">Cadastrar Nova Conta</a>
+  </div>
+</mat-drawer>
+  

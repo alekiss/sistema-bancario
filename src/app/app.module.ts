@@ -8,11 +8,16 @@ import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material/material.module';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { ClienteModule } from './pages/cliente/cliente.module';
+import { ContaModule } from './pages/conta/conta.module';
+import { HomeComponent } from './pages/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
+    HomeComponent,
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +29,8 @@ import { ClienteModule } from './pages/cliente/cliente.module';
     MaterialModule,
     NgxMaskDirective,
     NgxMaskPipe,
-    ClienteModule
+    ClienteModule,
+    ContaModule
   ],
   providers: [provideNgxMask()],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
