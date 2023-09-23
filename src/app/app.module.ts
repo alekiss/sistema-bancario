@@ -12,7 +12,7 @@ import { ClienteModule } from './pages/cliente/cliente.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

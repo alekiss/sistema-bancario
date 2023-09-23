@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CadastroClienteComponent } from './pages/cliente/cadastro-cliente/cadastro-cliente.component';
 import { ListagemClienteComponent } from './pages/cliente/listagem-cliente/listagem-cliente.component';
+import { HomeComponent } from './pages/home/home.component';
 
 
 const routes: Routes = [
@@ -17,14 +18,14 @@ const routes: Routes = [
         component: CadastroClienteComponent
       },
       {
-        path: '',
+        path: 'lista',
         component: ListagemClienteComponent,
       },
     ]
   },
   {
     path: '',
-    component: ListagemClienteComponent,
+    component: HomeComponent,
   },
 ];
 
