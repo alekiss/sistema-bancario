@@ -9,7 +9,9 @@
         >
         <mat-icon>menu</mat-icon>
       </button>
-        <a routerLink="/">Banco União</a>
+        <a routerLink="/">
+          <img class="logo" src="./../../../assets/logo.png" />
+        </a>
         <span></span>
       </mat-toolbar-row>
     </mat-toolbar>
@@ -17,10 +19,21 @@
   
 <mat-drawer #drawer mode="side">
   <div class="sidenav">
+    <mat-divider/>
     <a routerLink="/cliente/lista">Lista de Clientes</a>
+    <mat-divider/>
     <a routerLink="/cliente/novo">Cadastrar Novo Cliente</a>
+    <mat-divider/>
     <a routerLink="/conta/lista">Lista de Contas</a>
+    <mat-divider/>
     <a routerLink="/conta/novo">Cadastrar Nova Conta</a>
+    <mat-divider/>
+    <a routerLink="/conta/deposito">Depósito</a>
+    <mat-divider/>
+    <a routerLink="/conta/saque">Saque</a>
+    <mat-divider/>
+    <a routerLink="/conta/transferencia">Transferência</a>
+    <mat-divider/>
   </div>
 </mat-drawer>
   

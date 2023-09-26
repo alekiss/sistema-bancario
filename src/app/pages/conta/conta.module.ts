@@ -8,10 +8,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { CadastrarContaComponent } from './cadastrar-conta/cadastrar-conta.component';
 import { ListarContaComponent } from './listar-conta/listar-conta.component';
+import { DepositoContaComponent } from './deposito-conta/deposito-conta.component';
+import { SaqueContaComponent } from './saque-conta/saque-conta.component';
+import { TransferenciaContaComponent } from './transferencia-conta/transferencia-conta.component';
 
 
 @NgModule({
-  declarations: [ListarContaComponent, CadastrarContaComponent],
+  declarations: [ListarContaComponent, CadastrarContaComponent, DepositoContaComponent, SaqueContaComponent, TransferenciaContaComponent],
   imports: [
     CommonModule,
     FormsModule,
@@ -25,6 +28,6 @@ import { ListarContaComponent } from './listar-conta/listar-conta.component';
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [provideNgxMask()],
-  exports: [ListarContaComponent, CadastrarContaComponent],
+  exports: [ListarContaComponent, CadastrarContaComponent, DepositoContaComponent, SaqueContaComponent, TransferenciaContaComponent],
 })
 export class ContaModule { }

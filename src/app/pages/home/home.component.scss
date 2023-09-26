@@ -1,0 +1,23 @@
+.container-section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.image-container,
+.text-container {
+  display: inline-block;
+}
+
+.image-container {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.text-container {
+  width: 100%;
+  margin-left: 20px;
+  text-align: justify;
+}
